@@ -16,14 +16,23 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 TEAL = (0, 255, 255)
 
+#preps image
+
+
 #Window Settings
 size = (1280, 720)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Betwix Yall")
 
-#Runs the game
+#preps the game
 pygame.init()
 
 #Loop to keep game running
-while True:
-    pygame.display.update()
+if __name__ == "__main__":     
+    while True:
+        for event in pygame.event.get(): #Event Loop
+            if event.type == pygame.QUIT: #Lets game be closed
+                pygame.quit()
+        
+        
+        pygame.display.update()
