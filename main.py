@@ -17,7 +17,8 @@ BLUE = (0, 0, 255)
 TEAL = (0, 255, 255)
 
 #preps image
-
+BACKGROUND = pygame.image.load("images/backround.png")
+BACKGROUND = pygame.transform.scale(BACKGROUND, [1280, 720], )
 
 #Window Settings
 size = (1280, 720)
@@ -34,5 +35,7 @@ if __name__ == "__main__":
             if event.type == pygame.QUIT: #Lets game be closed
                 pygame.quit()
         
-        
+        ## Drawing ##
+        screen.blit(BACKGROUND, [0, 0, 1280, 720])
+        ##
         pygame.display.update()
