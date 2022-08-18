@@ -25,7 +25,7 @@ BACKGROUND = pygame.transform.scale(BACKGROUND, [1280, 720], )
 # Window Settings
 size = (1280, 720)
 screen = pygame.display.set_mode(size)
-pygame.display.set_caption("Betwix Yall")
+pygame.display.set_caption("KryptoQuiz")
 
 # preps the game
 pygame.init()
